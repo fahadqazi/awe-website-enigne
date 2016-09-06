@@ -1,0 +1,538 @@
+p {
+  color: #666666;
+}
+.Form {
+  background-color: #FFFFFF;
+}
+.button {
+  background-color: #7acb30;
+}
+input,
+form {
+  line-height: 22px !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body,
+html {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.widget_bottom {
+  clear: both;
+}
+#form-category-break {
+  clear: both;
+  height: 30px;
+}
+div.left {
+  width: 275px !important;
+}
+.field-hint {
+  display: none;
+  color: #a1ca57;
+  font-size: 11px;
+  clear: both;
+  margin: 0 0 5px 200px;
+}
+.field-error {
+  display: none;
+  color: #f23c46;
+  font-size: 11px;
+  line-height: 14px;
+  margin: 0 0 5px 200px;
+  clear: both;
+}
+.field-error.terms {
+  font-size: 11px;
+  margin: 0 0 5px 0px;
+}
+.field-dropdown {
+  width: 300px;
+  height: 40px;
+  padding: 5px 0 0 0;
+  margin-bottom: 5px;
+  float: left;
+  font-size: 14px;
+  line-height: 30px;
+  color: #666;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px !important;
+}
+/* INPUT FIELD GLOW  */
+input,
+textarea,
+select {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+input:focus,
+textarea,
+select:focus {
+  border-color: rgba(46, 87, 150, 0.5);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(46, 87, 150, 0.5);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(46, 87, 150, 0.5);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(46, 87, 150, 0.5);
+  outline: 0;
+  outline: thin dotted \9;
+}
+.field-dropdown-container {
+  float: left;
+}
+@media (max-width: 911px) {
+  .field-dropdown-container {
+    width: 100%;
+  }
+}
+/* HEADER TAG - PADLOCK  */
+.header-tag {
+  margin: 30px 0;
+  color: #666666;
+  padding: 0 20px;
+}
+.header-tag-text {
+  font-size: 18px;
+  line-height: 20px;
+  padding: 0 0;
+}
+.padlock {
+  background: url('//creditextracash.co.uk/wp-content/padlock.png') 8px 7px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-color: #f5773e;
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin: -2px 10px 0 0;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+.header-tag-text-small {
+  font-size: 12px;
+  line-height: 16px;
+}
+/* FORM HEADERS */
+.FormHeadings {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 0;
+  color: #f5773e;
+  clear: both;
+}
+.field-category-description {
+  line-height: 21px;
+  font-size: 14px;
+  background-color: #E7F0FF;
+  padding: 10px 20px;
+  margin: 0 0 30px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #f46626), color-stop(1, #f5773e));
+  background-image: -o-linear-gradient(right bottom, #f5773e 0%, rgba(13, 140, 213, 0.5) 100%);
+  background-image: -moz-linear-gradient(right bottom, #f5773e 0%, rgba(13, 140, 213, 0.5) 100%);
+  background-image: -webkit-linear-gradient(right bottom, #f5773e 0%, rgba(13, 140, 213, 0.5) 100%);
+  background-image: -ms-linear-gradient(right bottom, #f5773e 0%, rgba(13, 140, 213, 0.5) 100%);
+  background-image: linear-gradient(to right bottom, #f5773e 0%, rgba(13, 140, 213, 0.5) 100%);
+}
+.populate-form-container {
+  margin: 0 0;
+  width: 630px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form-container {
+  font-size: 13px;
+}
+.field-input {
+  font-size: 14px;
+  color: #666;
+}
+.field-input > input {
+  width: 300px;
+  height: 40px;
+  padding: 0 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #666;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  outline: none;
+  float: none;
+}
+.field-dropdown-small {
+  width: 85px;
+  margin: 0 10px 5px 0;
+}
+.field-input > input.field-small {
+  width: 250px;
+  clear: both;
+}
+.field-title-annotate {
+  color: #666666;
+  font-size: 14px;
+  width: 180px;
+  text-align: right;
+  float: left;
+  padding: 0 20px 0 0;
+  min-height: 40px;
+  line-height: 16px;
+  margin-top: 1.5%;
+}
+@media (max-width: 911px) {
+  .field-title-annotate {
+    min-height: 10px;
+  }
+}
+.field-container {
+  min-height: 40px;
+  padding: 0 0;
+  margin: 10px 0;
+  clear: both;
+  position: relative;
+}
+/* POSTCODE LOOKUP AREA */
+.field-postcode-spinner {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+.field-postcode-button {
+  cursor: pointer;
+  font-size: 16px;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background: url('//creditextracash.co.uk/wp-content/icon-postcode.png') 8px 5px;
+  background-repeat: no-repeat;
+  background-color: #f5773e;
+  border-radius: 4px;
+  border: 1px solid #f5773e;
+  padding: 0 0 0 10px;
+  margin: 0px 0 5px 200px;
+  text-decoration: none;
+  color: #FFF;
+  display: inline-block;
+  float: left;
+}
+.field-postcode-button:hover {
+  border: 1px solid #666;
+  background-color: #666;
+}
+.field-postcode-button:active {
+  position: relative;
+}
+/* ------------------------ */
+.field-title-name-termsopt,
+.field-title-name-marketingopt,
+.field-title-name-confirmieopt,
+.field-title-name-futureopt {
+  width: 520px;
+  text-align: justify;
+  padding: 5px 5px 0 20px !important;
+  float: right;
+  margin: 0 0 5px 0;
+  display: block;
+}
+.field-title-name-termsopt > a,
+.field-title-name-marketingopt > a,
+.field-title-name-confirmieopt > a,
+.field-title-name-futureopt > a {
+  color: #222;
+}
+.field-value-termsopt,
+.field-value-marketingopt,
+.field-value-confirmieopt,
+.field-title-name-futureopt {
+  padding-top: 10px !important;
+}
+.field-checkbox-input {
+  font-size: 30px;
+}
+#field-value-employmentmonthlyincome,
+#field-value-affordabilitymortgage,
+#field-value-affordabilitycredit,
+#field-value-affordabilityutility,
+#field-value-affordabilitytransport,
+#field-value-affordabilityfood,
+#field-value-affordabilityother {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+@media (min-width: 911px) {
+  .field-value-employmentmonthlyincome span {
+    margin-left: -10px;
+  }
+  .field-value-employmentmonthlyincome .field-input > input {
+    margin-left: -4px;
+  }
+}
+#field-value-submitform {
+  border: 0px;
+  margin-top: 0px;
+  display: inline-block;
+  background: url('//creditextracash.co.uk/wp-content/submit.png');
+  background-repeat: no-repeat;
+  background-color: #f5773e;
+  width: 225px;
+  height: 57px;
+  margin: 0 0;
+  padding: 0 0;
+  margin: 10px 0 10px;
+}
+#field-value-submitform:hover {
+  background-color: #666;
+}
+.field-value-submitform {
+  width: 225px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.padlock-small {
+  background: url('//creditextracash.co.uk/wp-content/padlock-grey.png') 5px 4px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  float: left;
+  margin: -4px 6px 0 0;
+}
+.padlock-small-right {
+  float: right;
+  margin: 0 0;
+  color: #999999;
+  padding: 0 10px;
+}
+.padlock-text-small {
+  font-size: 12px;
+  line-height: 22px;
+}
+/*.field-category-header-secure {
+    margin-top:-20px ;
+}*/
+/* desktop --------------------------------------------------------------------------------------------------- */
+@media (min-width: 910px) {
+  .form-container {
+    margin: 20px;
+  }
+}
+/* mobile ---------------------------------------------------------------------------------------------------- */
+@media (max-width: 911px) {
+  .header-tag-text-small {
+    font-size: 11px;
+  }
+  .header-tag {
+    padding: 0 0;
+  }
+  .field-is-null {
+    display: none;
+  }
+  .FormHeadings {
+    font-size: 17px;
+  }
+  .populate-form-container {
+    border: 0;
+    width: 300px;
+  }
+  .form-container {
+    width: 100%;
+    font-size: 13px;
+  }
+  .field-container {
+    min-height: 40px;
+    padding: 0px;
+  }
+  .field-input {
+    margin: 0 10px;
+  }
+  .field-input > input {
+    font-size: 13px;
+    width: 100%;
+  }
+  .field-dropdown {
+    width: 95%;
+    font-size: 14px;
+  }
+  .field-dropdown-small {
+    width: 29%;
+  }
+  .field-dropdown-container {
+    margin: 0 10px;
+  }
+  .field-title-annotate {
+    text-align: left;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 5px;
+  }
+  .field-title-name-termsopt,
+  .field-title-name-marketingopt,
+  .field-title-name-confirmieopt,
+  .field-title-name-futureopt {
+    width: 90%;
+    padding: 5px 5px 0 10px !important;
+  }
+  .field-error {
+    /*display: none ;*/
+    margin: 0 0 0 10px;
+    clear: both;
+  }
+  .field-hint {
+    clear: both;
+    margin: 0 0 0 10px;
+  }
+  .field-category-description {
+    margin: 0 0 10px 0;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 10px 10px;
+  }
+  .field-postcode-button {
+    margin: 10px 0 5px 10px;
+  }
+}
+.field-category-container {
+  display: block;
+  margin: 0 0;
+  padding: 0 0 30px 0;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fbfbfb), color-stop(1, #fcfcfc));
+  background-image: -o-linear-gradient(bottom, #fbfbfb 0%, #fcfcfc 100%);
+  background-image: -moz-linear-gradient(bottom, #fbfbfb 0%, #fcfcfc 100%);
+  background-image: -webkit-linear-gradient(bottom, #fbfbfb 0%, #fcfcfc 100%);
+  background-image: -ms-linear-gradient(bottom, #fbfbfb 0%, #fcfcfc 100%);
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #fcfcfc 100%);
+}
+.field-value-annotate {
+  font-size: 10px;
+  float: left;
+  line-height: 30px;
+  padding: 0 10px 0 0;
+}
+.field-set-container {
+  display: block;
+  font: normal 20px Arial, Helvetica, sans-serif;
+}
+.field-category-tsandcs {
+  display: block;
+  margin: 0 0;
+  padding: 0 0 0px 0;
+}
+.terms-container > div {
+  padding: 0px 10px 0 10px;
+  font-size: 10px;
+  line-height: 12px;
+}
+#field-value-applicantpostcodepicker {
+  max-width: 100%;
+  min-width: 80%;
+}
+.field-error-ht-defunct {
+  outline: 0;
+  border-color: rgba(200, 10, 16, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 10px rgba(200, 10, 16, 0.5);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 10px rgba(200, 10, 16, 0.5);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 10px rgba(200, 10, 16, 0.5);
+  border: 1px solid rgba(200, 10, 16, 0.5);
+}
+.field-look-at-me-ht-defunct {
+  outline: 0;
+  border-color: rgba(10, 200, 40, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 10px rgba(10, 200, 40, 0.5);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 10px rgba(10, 200, 40, 0.5);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 10px rgba(10, 200, 40, 0.5);
+  border: 1px solid rgba(10, 200, 40, 0.5);
+}
+#r-redirecting {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#r-redirecting-modal {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  opacity: 0.6;
+  position: fixed;
+  -webkit-opacity: .6;
+  -moz-opacity: .6;
+  filter: alpha(opacity=60);
+  left: 0;
+  top: 0;
+}
+#r-redirecting-content {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0 0 20px 0 #222;
+  -webkit-box-shadow: 0 0 20px 0 #222;
+  -moz-box-shadow: 0 0 20px 0 #222;
+  height: 440px;
+  left: 10%;
+  margin: -220px 0 0 -150px;
+  /* height/2 0 0 width/2 */
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  width: 80%;
+  z-index: 1001;
+}
+#r-please-wait {
+  position: absolute;
+  width: 90%;
+  max-height: 90px;
+  text-align: center;
+}
+#r-spinner-container {
+  width: 100px;
+  height: 100px;
+  top: 90px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#r-spinner {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+#r-adverts {
+  top: 220px;
+  width: 270px;
+  position: absolute;
+}
+#r-adverts img {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-left: -1px;
+}
+.field-button-container {
+  width: 100%;
+}

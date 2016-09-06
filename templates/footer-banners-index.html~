@@ -1,0 +1,120 @@
+<div class="extra-icons">
+  <div class="container">
+    <div class="row alt-color bullet">
+
+      <div class="col-xs-6 col-md-4">
+	<p><i class="fa fa-check-circle-o fa-lg fa-fw" aria-hidden="true"></i><strong> Borrow up to £5000¹</strong></li></p>
+      </div>
+
+      <div class="col-xs-6 col-md-4">
+	<p><i class="fa fa-check-circle-o fa-lg fa-fw" aria-hidden="true"></i><strong> Flexible 3 - 36 Month Loan</strong></p>
+      </div>
+
+            <div class="col-xs-6 col-md-4">
+	<p><i class="fa fa-check-circle-o fa-lg fa-fw" aria-hidden="true"></i><strong> Cash Sent the Same Day²</strong></p>
+      </div>
+
+           <div class="col-xs-6 col-md-4">
+	<p><i class="fa fa-check-circle-o fa-lg fa-fw" aria-hidden="true"></i><strong> Absolutely No Paperwork</strong></p>
+      </div>
+
+
+            <div class="col-xs-6 col-md-4">
+	<p><i class="fa fa-check-circle-o fa-lg fa-fw" aria-hidden="true"></i><strong> 100% Secure &amp; Encrypted</strong></p>
+      </div>
+
+           <div class="col-xs-6 col-md-4">
+	<p><i class="fa fa-check-circle-o fa-lg fa-fw" aria-hidden="true"></i><strong> One Simple Online Form</strong></p>
+      </div>
+
+    </div>
+    <div class="row text-center center-block">
+      <a href="apply.html" class="apply-btn short btn-center">Apply Now</a>
+      <p class="apr text-center">Representative APR {{ payload['website']['apr'] }}% *</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<aside>
+  <div class="divider text-center">
+  </div>
+</aside>
+
+<div class="container content">
+  <div class="row">
+    <div class="col-md-6">
+
+      <p class="lead">Compliance</p>
+
+      <p>© {{ payload['website']['name'] }} is a registered Trading name of {{ payload['website']['name'] }} which is an Appointed Representative of{{ payload['holding_company']['name'] }}, and is entered on the Financial Services Register under reference number: {{ payload['company']['fsa']['ref'] }}. {{ payload['holding_company']['name']}} is authorised and regulated by the Financial Conduct Authority and is entered on the Financial Services Register under 
+	reference number: {{ payload['holding_company']['fsa']['ref'] }}
+	{{ payload['website']['name'] }} is registered in England and Wales Company number: {{ payload['website']['reg'] }}, registered office; {{ payload['website']['address'] }} and Licensed by the Information Commissioners Office (registration number: {{ payload['website']['ico_reg']}})</p>
+
+      <p class="lead">Implications of late or non-payment</p>
+
+      <p>As a broker we work with numerous lenders all of which have their own practices and distinct loan
+        agreement terms and conditions. Late or non-payment may result in default charges, fees and extra
+        interest charges. If you are likely to miss or have any problems making a payment you should contact the
+        lender directly to discuss your options.</p>
+
+      <p class="lead">Credit checks and potential impact to credit score</p>
+
+      <p>We do not perform any credit checks but the lender you have been matched with may perform traditional
+        credit checks from a major credit reporting bureau. A missed and/or late payment may have a negative
+        impact on your credit score.</p>
+
+
+    </div>
+    <div class="col-md-6">
+
+      <p class="lead">Collection practices</p>
+
+      <p>As a broker we are not involved with the collection practices. If you are likely to miss or have any
+        problems making a payment you should contact the lender you have been matched with directly to discuss
+        your options. If you fail resolve with the lender directly then your account may be referred to a
+        collections agency.</p>
+
+      <p class="lead">Renewal policy</p>
+
+      <p>As a broker we are not involved with the decision to renew your loan. We work with numerous lenders all
+        of whom have their own specific renewal policies. We encourage you to read the loan agreement terms and
+        conditions specified by the lender we match you with carefully. Should you have any questions or if you
+        need to renew your loan, please kindly contact the lender you are matched with directly.</p>
+
+      <p>So be sure to read carefully the terms outlined by the lender you have been matched with. If you are
+        likely to miss or have any problems making a payment you should contact the lender directly to discuss
+        your options.</p>
+
+      <p class="lead">Code of practice and policy on responsible lending</p>
+      <p>{{ payload['company']['name'] }} work with a carefully selected panel of lenders who all abide to an ethical code of
+        practise and are contractually committed to responsible lending. Our preference is for a lender to be a
+        member of a trade body association. The code of practise and policy on responsible lending is available
+        from all lenders for the customer's information.</p>
+
+    </div>
+  </div>
+</div>
+<!-- /container content -->
+<div class="container">
+  <div class="advice-callout">
+  <div class="row">
+    <div class="col-md-2 ">
+      {% include 'advice-callout.svg' %}
+    </div>
+    <div class="col-md-10">
+      <h4>Where am I able to gain free independent advice?</h4>
+      <p>If you feel that your financial situation warrants further advice before you make the decision to apply for a loan,
+	you can obtain this from the <a href="http://www.citizensadvice.org.uk" target="_blank">Citizens Advice Bureau</a> or from
+	debt charity <a href="http://www.stepchange.org/" target="_blank">StepChange</a>. These organisations have experienced advisors
+	that will be able to help you whilst also keeping your information confidential.</p>
+    </div>
+  </div>
+</div>
+</div>
+

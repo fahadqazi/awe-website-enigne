@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="col-md-8">
+
+  <p>We always want you to take your personal situation into account and affordability before applying for any
+    loan. Responsibly managing your finances and knowing the terms of every loan you take are important
+    considerations before taking out any loan. If you are aware that you won't be able to repay, please do not
+    apply in the first place.</p>
+
+
+  <h3 class="alt-color">Where can I get free independent advice from?</h3>
+
+  <p>If you are having financial difficulties you can get free anonymous debt advice from the UK's leading debt charities:</p>
+
+  <div class="row">
+    <div class="col-md-3 ">
+      <a href="http://www.stepchange.org" target="_blank"><img src="/images/stepchange.jpg" alt="Step Change" width="150" height="90"></a>
+    </div>
+    <div class="col-md-9 ">
+      <p><strong>Step Change</strong></p>
+
+      <p><a href="http://www.stepchange.org" target="_blank">Step Change</a>&nbsp;is a registered charity offering free
+        and confidential advice and support, online or over the telephone, to anyone who is worried about debt.
+        Please call 0800 138 1111 between 8:00 a.m. and 8:00 p.m. Monday to Friday, or <a href="http://www.stepchange.org/Debtremedy.aspx">click here</a> for their online debt remedy
+        tool.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <a href="http://www.citizensadvice.org.uk" target="_blank"><img
+								    src="/images/citizens-advice.jpg" alt="Citizen's Advice Bureau" width="150" height="90"></a></div>
+    <div class="col-md-9">
+      <p><strong>Citizen's Advice Bureau</strong></p>
+
+      <p>The <a href="http://www.citizensadvice.org.uk" target="_blank">Citizen's Advice Bureau</a> (CAB)&nbsp;helps
+        people resolve legal, money and other problems by providing free face-to-face information and advice in
+        your community.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <a href="https://www.nationaldebtline.org" target="_blank"><img src="/images/national-debtline.jpg" alt="National Debtline" width="150" height="90" ></a>
+    </div>
+    <div class="col-md-9">
+      <p><strong>National Debtline</strong></p>
+
+      <p>The <a href="https://www.nationaldebtline.org" target="_blank">National Debtline</a>&nbsp;is a helpline that
+        offers free confidential and independent advice over the telephone for people living in England,
+        Scotland and Wales. Please call 0808 808 4000 Monday to Friday 9:00 a.m. to 9:00 p.m. and Saturday 9:30
+        a.m. to 1:00 p.m.</p>
+    </div>
+  </div>
+
+  <h3 class="alt-color">Our practices:</h3>
+
+  <ul class="bullet">
+    <li>We will not charge our customers any hidden or unnecessary fees</li>
+    <li>We will not encourage customers to take out loans that are not suitable for them</li>
+    <li>We will not target people who are in any financial difficulties</li>
+    <li>We aim to give customers a transparent service offering a clear understanding of the service we provide on
+      our website
+    </li>
+    <li>We follow legal compliance and ethical marketing practices</li>
+  </ul>
+
+  <p><em>If you feel we are not following these standards, please <a href="contact.html">contact us</a> and let us
+      know.</em></p>
+
+  <h3 class="alt-color">All lenders that we work with are committed to:</h3>
+
+  <ul class="bullet">
+    <li>Ensuring that any loan offered is specific to the borrowing needs of customers</li>
+    <li>Assessing each customer individually as to whether they are able to repay a loan</li>
+    <li>Providing clear loan documents and agreements as well as clear lines of communication</li>
+    <li>Maintaining high levels of customer service and satisfaction</li>
+  </ul>
+
+  <h3 class="alt-color">Be responsible:</h3>
+
+  <ul class="bullet">
+    <li>Please consider your incomings and outgoings to see whether you can afford a loan before taking one out </li>
+    <li>Late repayments or fail to repay your loan you will incur extra charges from the lender. Be sure to read
+      carefully the terms outlined by the lender you have been matched with
+    </li>
+  </ul>
+
+  <a href="apply.html" class="apply-btn short">Apply Now</a>
+  <!-- <p class="apr">Representative APR 91 <span class="dynamic-longterm-apr-value"></span>*</p> -->
+    <p class="apr">Representative APR {{ payload['website']['apr'] }}% *</p>
+</div>
+{% endblock %}

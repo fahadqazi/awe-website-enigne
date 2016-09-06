@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="sliderApp">
+<head>
+    <meta charset="utf-8">
+    <title>Flexy Slider Demo</title>
+    <style type="text/css">
+        #rect1, #rect2 {
+            clip-path: url(#mask);
+        }
+    </style>
+</head>
+<body>
+<div ng-controller="FormCtrl">
+    <h1>Flexy Slider Demo</h1>
+
+    <div slider-widget ng-model="slider" style="width: 1000px;"></div>
+
+</div>
+
+<script src="node_modules/angular/lib/angular.min.js"></script>
+<script src="node_modules/raphael/raphael.js"></script>
+<script src="node_modules/underscore/underscore.js"></script>
+<script src="dist/FlexySlider.js"></script>
+
+<script type="text/javascript">
+    angular
+        .module("sliderApp", [ 'FlexySlider' ])
+        .controller('FormCtrl', function ($scope) {
+            $scope.slider = {
+                amount: 100,
+                months: 1
+            };
+        });
+</script>
+
+</body>
+</html>

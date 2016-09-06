@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="col-md-8">
+  <h3 class="alt-color">How do I apply for a loan?</h3>
+  <p>Simply press the apply now button and fill out the simple online application form. We will give you a decision within seconds.</p>
+  <h3 class="alt-color">How much can I borrow?</h3>
+  <p>You can borrow up to &pound;5000 for a min of 3 months to a maximum period of 36 month</p>
+  <h3 class="alt-color">How much will I have to pay back for my loan?</h3>
+  <p>The amount you will have to pay back will depend on the lender you are matched with and the amount and duration of your loan. Please refer to the Representative APR example on the home page to give you an average example. </p>
+  <h3 class="alt-color">What can I use the loan for?</h3>
+  <p>We do not put restrictions on what you can use the loan for however if you are taking out a loan of a very short duration you should not treat it as a long term form of credit as it will be expensive. </p>
+  <h3 class="alt-color">How long does it take for the loan to reach my bank account?</h3>
+  <p>Approved loans will normally be in your bank account you the same day you apply for them and with some lenders this could take up to 5 minutes. However it will depend on your bank and the lender as to when the exact time is that the money reaches your account. Please ensure you give accurate bank details as this will speed up the process. </p>
+  <h3 class="alt-color">How do I repay the loan?</h3>
+  <p>Repayment of the loan is automatically taken from your debit card at the agreed date. You do not have to do anything or fill in any forms. </p>
+  <h3 class="alt-color">Is the information I submit when applying for a loan secure?</h3>
+  <p>Yes it is 100% secure and encrypted to bank standards. </p>
+  <h3 class="alt-color">Are there any upfront fees?</h3>
+  <p>There are no upfront fees when applying for a loan via {{ payload['website']['name'] }}; our loan matching service is free.{{ payload['website']['name'] }} receives a commission from the lenders and brokers that we refer you to, if you enter a loan agreement with the lender.</p>
+  <h3 class="alt-color">What do you mean you provide a matching service?</h3>
+  <p>{{ payload['website']['name'] }} is a loan broker so we introduce you to one of our panel of lenders or brokers to see if they are able to provide you with a loan. If you are matched successfully with one of our panel a lenders then you are provided with the opportunity of entering a borrowing agreement with that specific lender. Please be sure to consider all of the information provided to you by any lender before deciding to take out a pay day loan. In particular you should read the lender's website and loan documents to help you decide whether the loan is appropriate for your circumstances.</p>
+  <h3 class="alt-color">What are the complications of making a payment late or missing a payment altogether?</h3>
+
+  <p>Payday advances should be used for short-term borrowing needs only, where you are able to payback the loan within 30 days or on your next pay day. We work with numerous lenders all of which have their own practices and distinct loan agreement terms and conditions. However, the consequences of non-payment can include:</p>
+
+  <p> 1. Making it more difficult for you to obtain credit in the future or having to pay default charges to the lender. <br>
+    2. Paying more for your credit by extending the term of the loan and therefore the period for which you pay interest. <br>
+    3. Reports being made to a credit reference agency. </p>
+
+  <p>So be sure to read carefully the terms outlined by the lender you have been matched with. If you are likely to miss or have any problems making a payment you should contact the lender directly.</p>
+
+  <h3 class="alt-color">Do the lenders on {{ payload['website']['name'] }}'s panel comply with Responsible Lending?</h3>
+
+  <p>We work with over 30 lenders, all of which are contractually committed to Responsible Lending. All lenders that we work with are committed to:</p>
+
+  <p>1. Ensuring that any loan offered is specific to the borrowing needs of customers; <br>
+    2. Assessing each customer individually as to whether they are able to repay a loan; <br>
+    3. Providing clear loan documents and agreements as well as clear lines of communication;<br>
+    4. Maintaining high levels of customer service and satisfaction.</p>
+
+  <h3 class="alt-color">Does {{ payload['website']['name'] }} decide if I can renew my loan? </h3>
+
+  <p>As a broker we are not involved with the decision to renew your loan. {{ payload['website']['name'] }} works with numerous lenders all of whom have their own specific renewal policies. We encourage you to read the loan agreement terms and conditions specified by the lender we match you with carefully. Should you have any questions or if you need to  renew your loan, please kindly contact the lender you are matched with directly.</p>
+
+  <h3 class="alt-color">Where am I able to gain free independent advice?</h3>
+
+  <p>If you feel that your financial situation warrants further advice before you make the decision to apply for a loan, you can obtain this from the <a href="http://www.citizensadvice.org.uk" target="_blank">Citizens Advice Bureau</a> or from debt charity <a href="http://www.stepchange.org/" target="_blank">StepChange</a>. These organisations have experienced advisors that will be able to help you whilst also keeping your information confidential.</p>
+
+  <a href="apply.html" class="apply-btn short">Apply Now</a>
+  <!-- <p class="apr">Representative APR 91 <span class="dynamic-longterm-apr-value"></span>*</p> -->
+    <p class="apr">Representative APR {{ payload['website']['apr'] }}% *</p>
+</div>
+{% endblock %}

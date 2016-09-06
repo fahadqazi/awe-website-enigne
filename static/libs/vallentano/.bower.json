@@ -1,0 +1,13 @@
+{
+  "name": "vallentano",
+  "homepage": "https://github.com/quiddi/vallenato",
+  "_release": "8363d17d9a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "8363d17d9a410c6041c32c2723e5f29bed45c43c"
+  },
+  "_source": "git@github.com:quiddi/vallenato.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:quiddi/vallenato.git"
+}

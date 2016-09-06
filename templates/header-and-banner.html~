@@ -1,0 +1,143 @@
+<header class="image-bg-fluid-height"> <!--HEADER-->
+
+  <div class="container"><!--CONTAINER-->
+    <div class="row">
+      <div class="col-md-8 col-sm-8">
+        <div class="slider-box-left"> <!--SLIDER BOX LEFT-->
+
+
+          <h1><strong>I would like to borrow</strong> <span id="slider-money-bowl"><input type="text" id="amount" readonly/></span></h1>
+
+          <div class="clearfix"></div>
+          <div class="player">
+            <div class="volume"></div>
+          </div>
+          <span class="slider_txt pull-left ">£100</span>
+          <span class="slider_txt pull-right">£5000</span>
+
+          <div class="clearfix"></div>
+
+          <h1><strong>Over a</strong><span id="slider-money-bowl">
+	      <input type="text" id="duration" readonly/></span><strong>month term.
+	  </strong></h1>
+
+          <div class="player">
+            <div class="volume2"></div>
+          </div>
+
+          <span class="slider_txt  pull-left">3</span>
+          <span class="slider_txt  pull-right">36</span>
+
+          <div class="clearfix"></div>
+          <a href="apply.html" class="apply-btn short " style="margin:20px auto 10px auto">Apply Now</a>
+
+          <div class="apr">
+            <p class="apr  text-center"><strong>Representative APR {{ payload['website']['apr'] }}% *</strong></p>
+            <p>Amount of credit &pound;500 borrowed for 180 days. Interest: &pound;160.27 Interest rate: 65% 
+	      per annum (fixed). Representative APR: 91% Total amount payable: &pound;660.27</p>
+            <p>Period of loan: 3 – 36 months. APR rates from 35.9% to 1294% - your APR will be based on your personal circumstances;
+              we search an extensive panel of Lenders to find you the best APR. </p>
+          </div>
+
+        </div><!--END SLIDER BOX LEFT-->
+      </div>
+      
+      <div class="col-md-4 col-sm-4">
+        <div class="slider-box-right"><!--SLIDER BOX RIGHT-->
+	  
+	  <h1><strong>Borrow up to &pound;5000<sup>&#185;</sup> over 3 to 36 months.</strong></h1>                
+          <!-- NEW ICON STYLE -->
+          
+          <style>
+            .icon-container{margin:6px 0; display:inline-block; padding:0 0 0 0; clear:both; width:100%; height:60px}
+            .icon-circle{float:left; background-color:#89c43d; height:60px; width:60px; border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius: 50px;}
+            .icon-circle img{margin:0 0 0 0; padding:0 0 0 0; height:60px; width:60px}
+	    .icon-text{ text-align:left;  color:#fff; margin-left:75px; padding-top:10px}
+            
+	  <!--   @media (max-width: 480px) { -->
+	  <!--   .icon-circle.icon-smaller{ height:45px; width:45px; } -->
+	  <!--   .icon-circle.icon-smaller img{ height:45px; width:45px} -->
+	  <!--   .icon-text.icon-smaller{  font-size:12px; margin-left:55px; padding-top:5px} -->
+	  <!--   } -->
+	    
+	  <!-- </style> -->
+          
+          
+          <div class="icon-container">
+            <div class="icon-circle"><img src="/images/icon-nofees.png" alt="We never charge fees"/></div>
+            <div class="icon-text"> We Will <strong>Never</strong><br> Charge You Fees </div>
+          </div>
+          
+          <div class="icon-container">
+            <div class="icon-circle"><img src="/images/icon-secure.png" alt="Secure"/></div>
+            <div class="icon-text"> Your Details Are <br><strong>100% Secure</strong> </div>
+          </div>                    
+          
+          <div class="icon-container">
+            <div class="icon-circle"><img src="/images/icon-nopaperwork.png" alt="No Paperwork"/></div>
+            <div class="icon-text"> Absolutely <br><strong>No Paperwork</strong></div>
+          </div>               
+
+	  <div class="row">
+            <div class="col-md-12" >
+              <ul class="bullet white">
+                <li><i class="fa fa-check fa-fw " aria-hidden="true"></i>Flexible over 36 months</li>
+                <li><i class="fa fa-check fa-fw" aria-hidden="true"></i>Money can be sent today&#178;</li>
+                <li><i class="fa fa-check fa-fw" aria-hidden="true"></i>All redit ratings accepted</li>
+              </ul>                   
+            </div>                    
+          </div>                    
+        </div>
+
+        </div><!--END SLIDER BOX RIGHT-->
+      </div>
+    </div>
+  </div><!--END CONTAINER-->
+
+  <div class="row text-center">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 text-center">
+      <a href="responsible-lending.html"><img src="/images/responsible-lending.png" class="img-responsive resp-lend-image"></a>
+    </div>
+    <div class="col-md-4"></div>
+
+  </div>
+</header> <!--END HEADER-->
+
+
+<!--ICONS ROW-->
+<div class="new-icon-row">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-3 col-xs-6 ">
+       <div class="icon-container icon-smaller">
+          <div class="icon-circle icon-smaller"><img src="/images/icon-2500loan.png" alt="We process over 2500 loans"/></div>
+          <div class="icon-text icon-smaller"> We Process Over <br><strong>2500 Loans</strong> Everyday </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 col-xs-6 ">
+        <div class="icon-container icon-smaller">
+          <div class="icon-circle icon-smaller"><img src="/images/icon-nofees.png" alt="We never charge fees"/></div>
+          <div class="icon-text icon-smaller"> We Will <strong>Never</strong><br> Charge You Fees </div>
+        </div>
+      </div>
+            
+      <div class="col-sm-3 col-xs-6 ">
+        <div class="icon-container icon-smaller">
+          <div class="icon-circle icon-smaller"><img src="/images/icon-60sec.png" alt="60 second average decision"/></div>
+          <div class="icon-text icon-smaller"><strong>60 Seconds</strong><br> Average Decision </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 col-xs-6 ">
+        <div class="icon-container icon-smaller">
+          <div class="icon-circle icon-smaller"><img src="/images/icon-noobligation.png" alt="No obligation"/></div>
+          <div class="icon-text icon-smaller"><strong>No Obligation</strong><br> Application </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+<!--END ICONS ROW-->

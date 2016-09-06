@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <style>
+    body{
+
+    }
+    .container{
+    width: 70%;
+    margin: auto;
+
+    }
+    #first{
+    background-color:grey;
+    }
+    #second{
+    background-color:green;
+    }
+    #third{
+    background-color: blue;
+    }
+    #original{
+    background-color: red;
+    }
+    .block{
+    margin: 5px;
+    }
+    p{
+    color:white;
+    font-family: Arial;
+    }
+    
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div id="original" class="block">
+      <img style="width:50%; height:50%; margin:2%" src="/images/test-colors-one.jpg">
+      
+      </div>
+    <div id='first' class="block">
+      <img style="width:50%; height:50%; margin:2%" src="/images/test-colors-two.png">
+      </div>
+    <div id='second' class="block">
+      <img style="width:50%; height:50%; margin:2%" src="/images/test-colors-two.png">
+      </div>
+    <div id='third' class="block">
+      <img style="width:50%; height:50%; margin:2%" src="/images/test-colors-two.png">
+      </div>
+    </div>
+</body>
+</html>

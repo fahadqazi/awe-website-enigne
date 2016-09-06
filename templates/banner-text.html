@@ -1,0 +1,28 @@
+
+<div class="container-fluid logos-bar ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+	{% if request.path == '/how-it-works.html' %}
+	  <h1>How does it work?</h1>
+	{% elif request.path == '/faqs.html' %}
+	  <h1>Questions</h1>
+	{% elif request.path == '/about-us.html' %}
+	  <h1>About Us</h1>
+	{% elif request.path == '/apply.html' %}
+	  <h1>Apply Now</h1>
+	{% elif request.path == '/contact.html' %}
+	  <h1>Customer Service & Contact Information</h1>
+	{% elif request.path == '/privacy.html' %}
+          <h1>Privacy Policy</h1>
+	{% elif request.path == '/terms.html' %}
+	  <h1>Terms and Conditions</h1>
+	{% elif request.path == '/complaints-procedure.html' %}
+	  <h1>Complaints Procedure</h1>
+	{% elif request.path == '/responsible-lending.html' %}
+	  <h1>Responsible Lending</h1>
+	{% endif %}
+     </div>
+    </div>
+  </div>
+</div>

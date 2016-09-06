@@ -1,0 +1,79 @@
+<div class="col-md-4">
+  <div class="highlight">
+    <p class="lead alt-color">Multi Benefits</p>
+    <ul class="bullet">
+      <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i> Over 2 million applications processed</li>
+      <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i> Super fast technology matches you with lenders in seconds - Instant decision: 24/7</li>
+      <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i> No paperwork ‘ever’</li>
+      <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i> No application fees or monthly account charges</li>
+      <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i> No postal charges</li>
+      <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i> Same day cash²</li>
+      <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i> All data is secure and encrypted</li>
+    </ul>
+    <a href="apply.html" class="apply-btn short">Apply Now</a>
+
+    <p class="apr text-center">Representative APR {{ payload['website']['apr'] }}% *</p>
+
+  </div>
+
+
+{% if request.path == '/index.html' %}
+
+{% else %}
+  <div class="highlight highlight-apr">
+    <h2 class="alt-color"><strong>Representative APR {{ payload['website']['apr'] }}% *</strong></h2>
+
+    <!--<p class="dynamic-longterm-apr-example"></p>-->
+    <p class="">Amount of credit &pound;500 borrowed for 180 days. Interest: &pound;160.27 Interest rate: 65% per annum (fixed). Representative APR 91: 91% Total amount payable: &pound;660.27</p>
+    <p>Period of loan: 3 – 36 months. APR rates from 35.9% to 1294% - your APR will be based on your personal circumstances;
+      we search an extensive panel of Lenders to find you the best APR. </p>
+    <p><strong>Warning: Late repayment can cause you serious money problems. For help, go to <a href="http://www.moneyadviceservice.org.uk">moneyadviceservice.org.uk</a>.</strong></p>
+
+  </div>
+{% endif %}
+
+
+  <div>
+    <img src="/images/responsible-lending.png" class="img-responsive resp-lend-image">
+    <p><img src="/images/secure-logos.png" class="secure-logos" alt="Secure Website"></p>
+  </div>
+
+
+
+  {% if 'apply' in request.path %}
+
+  <div class="side-form-icons" style="padding:30px">
+    
+    <div class="icon-container">
+      <div class="icon-circle"><img src="/images/icon-9outof10.png" alt="60 second average decision"/></div>
+      <div class="icon-text side-icons"><strong>9 out of 10</strong><br> Applications Get a Loan </div>
+    </div>       
+    
+    <div class="icon-container">
+      <div class="icon-circle"><img src="/images/icon-60sec.png" alt="60 second average decision"/></div>
+      <div class="icon-text side-icons"><strong>60 Seconds</strong><br> Average Decision </div>
+    </div>  
+    
+    <div class="icon-container" >
+      <div class="icon-circle"><img src="/images/icon-2500loan.png" alt="We process over 2500 loans"/></div>
+      <div class="icon-text side-icons"> We Process Over <br><strong>2500 Loans</strong> Everyday </div>
+    </div>                
+
+    <div class="no-obligation-container"><!-- NO OBLIGATION ICON -->
+      <div class="row">
+	<div class="col-xs-2">
+          <div class="icon-circle-no-obligation"><img src="/images/icon-noobligation.png" alt="No obligation"/></div>
+	</div>
+        <div class="col-xs-10 text-center">
+          <strong>NO OBLIGATION</strong><br><span style="letter-spacing:1px">APPLICATION</span>
+        </div>      
+      </div>
+    </div><!-- END NO OBLIGATION ICON -->
+
+    
+  </div>
+
+  {% endif %}
+
+
+</div> <!--col-md-4-->

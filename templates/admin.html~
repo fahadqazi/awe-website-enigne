@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" -->
+    <!--       integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.3.3/css/bootstrap-colorpicker.css"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css"> -->
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-light bg-faded"> -->
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <a class="navbar-brand" href="#">Affiliate Website Engine </a>
+      <ul class="nav navbar-nav">
+	
+	<li class="nav-item">
+	  <a class="nav-link" href="#">Add Theme</a>
+	</li>
+	
+	<li class="nav-item">
+	  <a class="nav-link" href="#">Edit Theme</a>
+	</li>
+      </ul>
+      <!-- <form class="form-inline pull-xs-right"> -->
+      <!-- 	<input class="form-control" type="text" placeholder="Search"> -->
+      <!-- 	<button class="btn btn-outline-success" type="submit">Search</button> -->
+      <!-- </form>  -->
+    </nav>
+    
+
+    <div class="container">
+
+    <form>
+        <h4 style="margin-left:50%; margin-right:50%; width:50%;">Website</h4>
+
+        <div class="form-group">
+          <label for="websiteName">Name</label>
+          <input type="text" class="form-control" id="websiteName" placeholder="Website Name">
+        </div>
+        <div class="form-group">
+          <label for="websiteLogo">Logo</label>
+          <input type="text" class="form-control" id="websiteLogo" placeholder="Website Logo">
+        </div>
+        <div class="form-group">
+          <label for="websiteLogoAlt">Logo Alt</label>
+          <input type="text" class="form-control" id="websiteLogoAlt" placeholder="Website Logo Alt">
+        </div>
+        <div class="form-group">
+          <label for="websiteEmail">Email Address</label>
+          <input type="email" class="form-control" id="websiteEmail" placeholder="Website Email">
+        </div>
+        <div class="form-group">
+          <label for="websiteApr">APR</label>
+          <input type="text" class="form-control" id="websiteApr" placeholder="Website Apr">
+        </div>
+
+      <h4 style="margin-left:50%; margin-right:50%; width:50%;">Company</h4>
+
+        <div class="form-group">
+          <label for="companyName">Name</label>
+          <input type="text" class="form-control" id="companyName" placeholder="Company Name">
+        </div>        
+        <div class="form-group">
+          <label for="companyReg">Registeration Number</label>
+          <input type="text" class="form-control" id="companyReg" placeholder="Company Registeration Number">
+        </div>
+        <div class="form-group">
+          <label for="companyAddress">Address</label>
+          <input type="text" class="form-control" id="companyAddress" placeholder="Company Address">
+        </div>
+        <div class="form-group">
+          <label for="companyIcoReg">Company ICO Reg</label>
+          <input type="text" class="form-control" id="companyIcoReg" placeholder="Company Ico Reg">
+        </div>
+        <div class="form-group">
+          <label for="companyFsaRef">Fsa Ref</label>
+          <input type="text" class="form-control" id="companyFsaRef" placeholder="Company Fsa Reference">
+        </div>
+        <div class="form-group">
+          <label for="selection">FSA Full Permission</label>
+          <select class="form-control" id="selection">
+              <option>True</option>
+              <option>False</option>
+          </select>
+        </div>
+
+        <h4 style="margin-left:50%; margin-right:50%; width:50%;">Holding Company</h4>
+
+        <div class="form-group">
+          <label for="holdingCompanyName">Company Name</label>
+          <input type="text" class="form-control" id="holdingCompanyName" placeholder="Holding Company Name">
+        </div>
+        <div class="form-group">
+          <label for="holdingCompanyFsaRef"> Fsa Ref</label>
+          <input type="text" class="form-control" id="holdingCompanyFsaRef" placeholder="Holding Company Fsa Reference">
+
+	  <h4 style="margin-left:50%; margin-right:50%; width:50%;">Colors</h4>
+	  
+	  <div class="form-group" id="colorpicker">
+	    <label for="bodyTextColor">Body Text Color</label>
+	    <input class="form-control" type="color" value="#563d7c" id="bodyTextColor">
+	  </div>
+	  <div class="form-group">
+	    <label for="firstColor">First Color</label>
+	    <input class="form-control" type="color" value="#563d7c" id="firstColor">
+	  </div>
+	  <div class="form-group">
+	    <label for="secondColor">Second Color</label>
+	    <input class="form-control" type="color" value="#563d7c" id="secondColor">
+	  </div>
+
+	  <h4 style="margin-left:50%; margin-right:50%; width:50%;">Button Colors</h4>
+
+	  <div class="form-group">
+	    <label for="stillColor">Button Still Color</label>
+	    <input class="form-control" type="color" value="#563d7c" id="stillColor">
+	  </div>
+	  <div class="form-group">
+	    <label for="hoverColor">Button hover Color</label>
+	    <input class="form-control" type="color" value="#563d7c" id="hoverColor">
+	  </div>
+
+          <!--  <div id="cp2" class="input-group colorpicker-component"> -->
+	  <!--   <input type="text" value="#00AABB" class="form-control" /> -->
+	  <!--   <span class="input-group-addon"><i></i></span> -->
+	  <!-- </div> -->
+	  
+    </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" -->
+    <!--         integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" -->
+    <!--         integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" -->
+    <!--         integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script> -->
+    
+    <script>
+      $("#colorpicker").spectrum({
+      color: "#f00"
+      });
+    </script>
+
+
+    <!-- <script> -->
+    <!--   $(function() { -->
+    <!--   $('#cp2').colorpicker(); -->
+    <!--   }); -->
+    <!-- </script> -->
+
+  </body>
+</html>
+

@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="col-md-8">
+
+
+  <p>We always strive for a great customer service experience and take every complaint very seriously. If you
+    are
+    not satisfied with any aspect of the credit brokerage service that you have received from {{ payload['website']['name'] }}
+    (the
+    Company, we, us, or our), we would like you to tell us your concerns to enable us to address them.</p>
+
+
+  <h3 class="alt-color">How can I complain?</h3>
+
+  <p>You can send in your complaint to us by emailing <a
+							 href="mailto:{{ payload['website']['email'] }}?subject=Complaints - MultiMonthLoan">{{ payload['website']['email'] }}</a>.
+    Alternatively, if you want to write to us please send your complaint to {{ payload['company']['address'] }}</p>
+
+  <h3 class="alt-color">What we will need from you</h3>
+
+  <p>To help us investigate and resolve your complaint please provide us with the following details;</p>
+
+  <p>• Your full name, address, date of birth and telephone number<br>
+    • The full details of your concern. Please provide as much details as possible</p>
+
+  <p>Please note that we cannot deal with complaints regarding the service provider or any lender or broker we
+    may
+    refer you. You will need to take up such complaint directly with them.</p>
+
+  <h3 class="alt-color">How long will it take?</h3>
+
+  <p>Upon receipt of your complaint we will do our best to resolve your complaint by the end of the next
+    working
+    day.</p>
+
+  <p>If we cannot do this, we will send you an acknowledgement within 5 working days of receipt and let you
+    know who
+    is dealing with it.</p>
+
+  <p>We will keep you informed of the progress of the investigation by writing to you no later than four weeks
+    after
+    receiving your complaint, to let you know the outcome of our investigations. If for some reason we have
+    been
+    unable to reach a resolution at this stage and further investigations are required, we will write to you
+    at this
+    stage informing you of the reasons for the delay.</p>
+
+  <p>We are committed to ensuring that you receive a final response letter within eight weeks of the Company
+    receiving
+    your complaint.</p>
+
+  <h3 class="alt-color">If you are still not satisfied</h3>
+
+  <p>If you are dissatisfied with our final response, or we have not provided a final response within eight
+    weeks of
+    receiving your complaint you have a number of options available to you:</p>
+
+  <p>&bull; You can ask us for a formal review by contacting our Complaints Manager; and / or<br/>
+    &bull; You can ask the Financial Ombudsman Service (FOS) to review your complaint. You may contact FOS
+    following
+    the passing of eight weeks after making a complaint. You have a maximum of 6 months from date of receipt
+    of our
+    final response within which to contact FOS.</p>
+
+  <p>Please note, even if you have asked for your complaint to be reviewed by the Company, you still have the
+    right to
+    contact the FOS.</p>
+
+  <h3 class="alt-color">Contact Details</h3>
+
+  <p>To request a formal review of our complaints procedure, please contact the Complaints Manager on:</p>
+
+  <p>The Complaints Manager, Quiddi Hub Limited, <span class="dynamic-address-quiddihub"></span> United Kingdom.
+  </p>
+
+  <p>
+    To submit a complaint to FOS, please contact the Financial Ombudsman Service, Exchange Square, London,
+    E14 9SR. Telephone: 0800 023 4567. Email: <a href="mailto:complaint.info@financial-ombudsman.org.uk">complaint.info@financial-ombudsman.org.uk</a>.
+  </p>
+
+
+  <a href="apply.html" class="apply-btn short">Apply Now</a>
+  <!-- <p class="apr">Representative APR 91 <span class="dynamic-longterm-apr-value"></span>*</p> -->
+  <p class="apr">Representative APR {{ payload['website']['apr'] }}% *</p>
+
+</div>
+{% endblock %}

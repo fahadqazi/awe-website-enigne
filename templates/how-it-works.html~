@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-8">
+  <div><img src="/images/how-it-works.jpg" alt="How it works" class="how-it-works"/></div>
+
+  <ul class="bullet">
+    <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i>We apply to all lenders so you don't have to and no fees!</li>
+    <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i>Super fast online application process - no paperwork</li>
+    <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i>With our large panel of lenders you are more likely to get a loan</li>
+  </ul>
+
+  <h3 class="alt-color"><strong>Step 1</strong> Complete our online application form</h3>
+
+  <p>The online application process is really fast and simple. Please make sure you complete all the details accurately as these are needed in order for the right decisions to be made about your loan. To qualify for a loan you need to meet the following minimum criteria:</p>
+
+  <ul class="bullet">
+    <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i>Be a UK resident</li>
+    <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i>18 years or over</li>
+    <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i>In Employment</li>
+    <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i>Earn at least £800 a month</li>
+    <li><i class="fa fa-check-circle-o fa-fw" aria-hidden="true"></i>Have a current bank account with a debit card</li>
+  </ul>
+
+  <h3 class="alt-color"><strong>Step 2</strong> We search for lenders in seconds</h3>
+
+  <p>We have one of the largest panel of lenders in the UK and we search all of them in real time instantly. Within seconds you will have a decision on whether a lender has accepted you or not. Unlike banks our lenders have the most advanced technology for screening and issuing loans to all kinds of people with different credit scores.</p>
+
+  <h3 class="alt-color"><strong>Step 3</strong> A lender issues you with a loan and you get your cash</h3>
+
+  <p>We do not charge fees and there is no paperwork to complete. Most lenders will put the cash into your bank account the same day and some within minutes of approval. Our job is to ensure the process is fast and easy for you to understand. </p>
+
+  <a href="apply.html" class="apply-btn short">Apply Now</a>
+  <!-- <p class="apr">Representative APR 91 <span class="dynamic-longterm-apr-value"></span>*</p> -->
+  <p class="apr">Representative APR {{ payload['website']['apr'] }}% *</p>
+</div><!--col-md-8-->
+
+
+
+{% endblock %}

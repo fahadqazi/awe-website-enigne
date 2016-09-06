@@ -1,0 +1,447 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('/bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('/bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('/bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('/bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-error:before {
+  font-family: FontAwesome;
+  content: "\f06a";
+}
+.icon-success:before {
+  font-family: FontAwesome;
+  content: "\f058";
+}
+.form-horizontal {
+  display: block;
+}
+.form-horizontal .form-control[disabled],
+.form-horizontal .form-control[readonly],
+fieldset[disabled] .form-horizontal .form-control {
+  cursor: not-allowed;
+  background-color: #eee;
+  opacity: 1;
+}
+.form-horizontal button {
+  display: inline-block;
+  background-color: transparent;
+  padding: 6px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.form-horizontal button:hover {
+  background-color: #99cc33;
+  color: #ffffff;
+}
+.form-horizontal button.active {
+  background-color: #99cc33;
+  color: #ffffff;
+}
+.form-horizontal button.btn-info {
+  background-color: #99cc33;
+  color: #ffffff;
+}
+.form-horizontal button.button-apply {
+  font-size: 1.2em;
+  height: 50px;
+  line-height: 0px;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #1d76ba;
+  border-radius: 5px;
+  border: 3px solid #1d76ba;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0 100px;
+}
+.form-horizontal button.button-apply:hover {
+  background-color: transparent;
+  border: 3px solid #1d76ba;
+  color: #1d76ba;
+}
+.form-horizontal button.btn-find-address {
+  background-color: #1d76ba;
+  color: #ffffff;
+  margin: 0.8em;
+}
+.form-horizontal h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 0;
+  color: #1d76ba;
+  font-family: 'Open Sans', sans-serif;
+}
+.form-horizontal fieldset {
+  border: 0px none;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.form-horizontal fieldset.outgoings select {
+  width: 90%;
+}
+.form-horizontal fieldset input[type="text"],
+.form-horizontal fieldset input[type="email"],
+.form-horizontal fieldset input[type="tel"] {
+  width: 90%;
+}
+.form-horizontal fieldset #amount select,
+.form-horizontal fieldset #residentialStatus select,
+.form-horizontal fieldset #payFrequency select,
+.form-horizontal fieldset #paidIntoBank select,
+.form-horizontal fieldset #employmentIndustry select,
+.form-horizontal fieldset #debitCard select {
+  width: 90%;
+}
+.form-horizontal fieldset #duration select,
+.form-horizontal fieldset #dateOfBirth select,
+.form-horizontal fieldset #postcode select,
+.form-horizontal fieldset #residentialTime select,
+.form-horizontal fieldset #employmentTime select {
+  width: 80%;
+}
+.form-horizontal fieldset #duration input,
+.form-horizontal fieldset #dateOfBirth input,
+.form-horizontal fieldset #postcode input,
+.form-horizontal fieldset #residentialTime input,
+.form-horizontal fieldset #employmentTime input {
+  width: 80%;
+}
+.form-horizontal fieldset #sortCode input {
+  width: 50%;
+}
+.form-horizontal .control-label {
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px;
+}
+.form-horizontal #postcode {
+  min-height: 125px;
+}
+.form-horizontal .row {
+  width: 100%;
+}
+.form-horizontal .row div.col-sm-3,
+.form-horizontal .row label.col-sm-3 {
+  width: 23%;
+}
+.form-horizontal .row div.col-sm-9,
+.form-horizontal .row label.col-sm-9 {
+  width: 75%;
+}
+.form-horizontal .row div.col-sm-9 .row,
+.form-horizontal .row label.col-sm-9 .row {
+  display: inline-block;
+  width: 95%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.form-horizontal .row div.col-sm-9 .form-control-feedback,
+.form-horizontal .row label.col-sm-9 .form-control-feedback {
+  float: right;
+  margin-top: 17px;
+}
+.form-horizontal .row div.col-xs-6,
+.form-horizontal .row label.col-xs-6 {
+  width: 48%;
+  float: left;
+}
+.form-horizontal .row div.col-xs-4,
+.form-horizontal .row label.col-xs-4 {
+  width: 32%;
+  float: left;
+}
+.form-horizontal .row div.col-xs-3,
+.form-horizontal .row label.col-xs-3 {
+  width: 24%;
+  float: left;
+}
+.form-horizontal .row div.find-address,
+.form-horizontal .row label.find-address {
+  float: right;
+}
+.form-horizontal .row label.control-label {
+  padding: 0.7em;
+}
+.form-horizontal .row label.terms {
+  text-align: left;
+  color: #000000;
+}
+.form-horizontal .row input,
+.form-horizontal .row select {
+  margin: 0.7em;
+  font-size: 14px;
+  color: #666;
+  border: 2px solid #1d76ba;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  outline: none;
+  float: none;
+}
+.form-horizontal .row input:focus,
+.form-horizontal .row select:focus {
+  outline: none;
+  box-shadow: 0 0 10px #1d76ba;
+}
+.form-horizontal .row input {
+  height: 26px;
+}
+.form-horizontal .row select {
+  height: 30px;
+}
+.form-horizontal .has-feedback.has-error .icon-error {
+  color: #cc0000;
+}
+.form-horizontal .has-feedback.has-error label {
+  color: #cc0000;
+}
+.form-horizontal .has-feedback.has-error input,
+.form-horizontal .has-feedback.has-error select {
+  border: 2px solid #ffcccc;
+  box-shadow: 0 0 10px #ffcccc;
+}
+.form-horizontal .has-feedback.has-error input:focus,
+.form-horizontal .has-feedback.has-error select:focus {
+  box-shadow: 0 0 10px #ffcccc;
+}
+.form-horizontal .has-feedback.has-error .help-block {
+  color: #cc0000;
+}
+.form-horizontal .has-feedback.has-success .icon-success {
+  color: #5c7a1f;
+}
+.form-horizontal .has-feedback.has-success label {
+  color: #5c7a1f;
+}
+.form-horizontal .has-feedback.has-success input,
+.form-horizontal .has-feedback.has-success select {
+  border: 2px solid #d6ebad;
+  box-shadow: 0 0 10px #d6ebad;
+}
+.form-horizontal .has-feedback.has-success input:focus,
+.form-horizontal .has-feedback.has-success select:focus {
+  box-shadow: 0 0 10px #d6ebad;
+}
+.form-horizontal .has-feedback.has-success .help-block {
+  color: #5c7a1f;
+}
+.form-horizontal .ng-hide,
+.form-horizontal .hidden {
+  display: none !important;
+}
+.form-horizontal .panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.form-horizontal .panel-body {
+  padding: 15px;
+  background-color: #c6e1f6;
+}
+.form-horizontal .panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #1d76ba;
+}
+.form-horizontal .panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.form-horizontal .panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9em;
+  color: #ffffff;
+}
+.form-horizontal .panel-title > a {
+  color: inherit;
+}
+.form-horizontal .panel-primary {
+  border-color: #1d76ba;
+}
+.form-horizontal .table {
+  width: 75%;
+  max-width: 75%;
+  margin-bottom: 0px;
+  color: #666;
+}
+.form-horizontal .table {
+  background-color: #fff;
+}
+.form-horizontal .date-picker .dropdown-menu {
+  padding: 5px;
+  background-color: #b9dbf4;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+.form-horizontal .date-picker table {
+  border-collapse: collapse;
+  margin: 5px;
+}
+.form-horizontal .date-picker table td,
+.form-horizontal .date-picker table th {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.form-horizontal .date-picker table td.text-center em,
+.form-horizontal .date-picker table th.text-center em {
+  font-size: 0.8em;
+  padding: 0 10px;
+}
+.form-horizontal .tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  visibility: visible;
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.form-horizontal .tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.form-horizontal .tooltip.top {
+  margin-top: -3px;
+  padding: 5px 0;
+}
+.form-horizontal .tooltip.right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.form-horizontal .tooltip.bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.form-horizontal .tooltip.left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.form-horizontal .tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  border-radius: 4px;
+}
+.form-horizontal .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.form-horizontal .tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000000;
+}
+.form-horizontal .tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000000;
+}
+.form-horizontal .tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  right: 5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000000;
+}
+.form-horizontal .tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000000;
+}
+.form-horizontal .tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000000;
+}
+.form-horizontal .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000000;
+}
+.form-horizontal .tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000000;
+}
+.form-horizontal .tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000000;
+}
+.form-horizontal .help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 0 0.7em;
+  font-size: 0.8em;
+}
+.form-horizontal .clearfix:before,
+.form-horizontal .clearfix:after {
+  content: " ";
+  display: table;
+}
+.form-horizontal .clearfix:after {
+  clear: both;
+}
+.top-footer p {
+  color: white !important;
+}

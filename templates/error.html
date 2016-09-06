@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+        <div class="col-md-8">
+             <p>Error - we're unable to get requested the information for you. System has returned without response. Please try again later.</p>
+
+
+           <a href="apply.html" class="apply-btn short">Apply Now</a>
+
+            <p class="apr">Representative APR {{ payload['website']['apr'] }}% *</p>
+	     <!-- <p class="apr">Representative APR 91 <span class="dynamic-longterm-apr-value"></span>*</p> -->
+
+        </div>
+
+{% endblock %}
+

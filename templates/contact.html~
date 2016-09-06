@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="col-md-8">
+  <p>Here at {{ payload['company']['name'] }} we always strive for a great customer service experience. You can reach our customer
+            service team on the details below between 9:00am - 5:30pm Monday to Friday. We do not operate any call
+            centres. Please note that we may take up to 5 working days to respond.</p>
+
+
+        <p><strong>General Enquiries</strong> <br>
+            Email: <a href="mailto:{{ payload['website']['email'] }}">{{ payload['website']['email'] }}</a>
+        </p>
+
+        <p><strong>Company Information</strong><br>
+            {{ payload['website']['name'] }} is a trading name of {{ payload['company']['name'] }} <br>
+            Company Number:  {{ payload['company']['reg'] }}<br>
+            FCA Number: {{ payload['fsa']['ref'] }}<br>
+            Data Protection: {{ payload['company']['ico_reg'] }}<br>
+            Registered address: {{ payload['company']['address'] }}</p>
+
+        <p><strong>SMS Opt Out</strong> <br>We are not responsible for any URL redirection marketing techniques, also
+            called URL / domain forwarding. If you have received unsolicited marketing messages then kindly refer to the
+            original message and follow opt-out instructions.</p>
+
+        <p><strong>Complaints</strong> <br>If you are not happy with our service and would like to send a complaint to
+            us,
+            please visit our <a href="complaints-procedure.html">Complaints Procedure</a> page for more information.</p>
+
+
+       <a href="apply.html" class="apply-btn short">Apply Now</a>
+
+       <p class="apr">Representative APR {{ payload['website']['apr'] }}% *</p>
+       
+         <!-- <p class="apr">Representative APR 91 <span class="dynamic-longterm-apr-value"></span>*</p> -->
+    </div>
+{% endblock %}

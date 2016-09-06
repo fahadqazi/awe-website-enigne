@@ -1,0 +1,26 @@
+.navbar-nav {
+  border-radius: 30px;
+}
+@media (min-width: 1000px) {
+  .navbar-nav {
+    margin-top: 28px;
+  }
+}
+.navbar-nav ul li a {
+  font-size: 16px;
+  line-height: 95px;
+  text-decoration: none;
+  display: block;
+  color: #999;
+  font-weight: 400;
+  padding: 0 22px;
+}
+.nav > li > a {
+  font-size: 16px;
+  color: #999;
+  font-weight: 400;
+}
+.nav > li > a:hover {
+  background: none;
+  color: #2c405e;
+}

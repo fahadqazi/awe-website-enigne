@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MultiMonthLoans.com | How it works</title>
+    <meta name="description"  content="Borrow up to £5000 over 3 to 36 months">
+    <link href="/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet"/>
+    <!-- <script src="https://use.fontawesome.com/b352bd2257.js"></script> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    {% if 'apply' in request.path %}
+    <script src='https://v2-form.quiddiportal.com/v1.0/render/js/blue_gradient/simpleterm?a=QUIDDI_916&t=desktop&os=1' async defer></script>
+    <link href="/css/default2.css" rel="stylesheet">
+    {% endif %}
+  </head>
+
+  <body>
+    {% if request.path == '/index.html' %}
+    <div class="text-center">
+      <p class="alt-color"><strong>Warning: Late repayment can cause you serious money problems. For help, go to <a href="https://www.moneyadviceservice.org.uk/en" target="_blank">
+	    moneyadviceservice.org.uk</a></strong></p>
+
+    </div>
+
+    {% endif %}
+
+
+    <!-- mobile nav -->
+    <div class="navbar navbar-inverse navbar-fixed-top visible-sm visible-xs flexy-nav" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+
+          <a href="index.html" class="navbar-brand"><img src="/images/multi-month-loan-logo.png"  alt="Multi Month Loans logo" /></a>
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="faqs.html">FAQ's</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!--/ mobile nav -->
+
+    <!-- desktop nav -->
+    <div class="container">
+      <div class="row">
+	<div class="col-lg-4 col-md-4 col-sm-12">
+	  <img src="/images/multi-month-loan-logo.png"  alt="Multi Month Loans logo" class="header-logo"/>
+
+	</div>
+	<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-12 hidden-sm hidden-xs">
+	  <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="faqs.html">FAQ's</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="contact.html">Contact</a></li>
+	  </ul>
+	</div>
+      </div>
+    </div>
+    <!-- /container header -->
+
+
+
+
+    {% if request.path == '/index.html' %}
+      {% include 'header-and-banner.html' %}
+    {% else %}
+      {% include 'banner-text.html' %}
+    {% endif %}
+
+    {% if 'apply' in request.path %}
+    {% include 'secure-sameday-banner.html' %}
+    {% endif %}
+
+
+    <!--Secure Same Day Loans Banner-->
+    <div class="container how-it-works">
+      <!-- {% if root %} -->
+      <!-- <p>ROOT IS HERE{{ root }}</p> -->
+      <!-- {% endif %} -->
+      <div class="row">
+
+	<!--Page content-->
+	{% block content %}
+	{% endblock %}
+	<!--Page content-->
+
+
+	<!--sidebar-->
+	{% include 'benefits-column.html' %}
+	<!--sidebar-->
+
+      </div>
+    </div>
+
+    {% if request.path == '/index.html' %}
+    {% include 'footer-banners-index.html' %}
+    {% endif %}
+
+
+
+
+    <!--footer-->
+    <div class="container-fluid footer">
+      <div class="container">
+	<div class="row">
+	  
+	  <div class="col-sm-8">
+            <div class="spacer"></div>
+            <img class="img-responsive" src="/images/multi-month-loan-logo.png" alt="Multi Month Loans Logo" width="258" height="80">
+            <p class="large"><strong>Our loans range right the way through from 3 month loans to 36 month loans that can be paid in one payment or in instalments over the duration of the loan. They fill a gap in the market left by both traditional bank overdrafts as well as unsecured loans.</strong></p>
+            <!--<p class="lead">Company Info</p>-->
+            <p>Company Number: <strong> {{ payload['company']['reg'] }}</strong>. FCA Number: <strong>{{ payload['company']['fsa']['ref'] }}</strong>. Data Protection: <strong>{{ payload['company']['ico_reg'] }}</strong>.</p>
+	    
+	    <div>
+	      <p> <i class="fa fa-map-marker fa-1g fa-fw" aria-hidden="true" ></i> {{ payload['company']['address'] }} </p>
+	    </div>
+	    
+	    <div>
+	      <p> <i class="fa fa-envelope fa-1g fa-fw" aria-hidden="true" ></i><a href="mailto:{{ payload['website']['email'] }}">  {{ payload['website']['email'] }}</a></p>
+	    </div>
+	    
+	  </div><!--col-sm-8-->
+	  
+	  <div class="col-sm-4 text-center">
+	    <div class="map-overlay"><img class="img-responsive uk-map" src="/images/uk-map-overlay.png"></div>
+            <!-- <img class="img-responsive uk-map" src="/images/uk-map.png" > -->
+	    {% include 'map-uk.svg' %}
+	  </div>
+	  
+	</div> <!--row-->
+      </div>
+    </div>
+    <!-- /container-fluid footer -->
+
+    <div class="container-fluid footer-info text-center">
+
+      <div class="row">
+	<div class="col-lg-12">
+	  <ul class="footer-nav">
+            <li><a href="responsible-lending.html">Responsible lending</a></li>
+            <li><a href="complaints-procedure.html">Complaints procedure</a></li>
+            <li><a href="terms.html">Terms &amp; conditions</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+	  </ul>
+	</div>
+	<div class="col-md-12">
+
+	  <p>
+            &copy; {{ payload['website']['name'] }} is a registered Trading name of {{ payload['company']['name'] }}
+
+	    {% if payload['company']['fsa']['full_permission'] == "True"%}
+	    which is an Appointed Representative of {{ payload['holding_company']['name'] }}, 
+	    {% endif %}
+
+	    and is entered on the Financial Services Register under reference number: {{ payload['company']['fsa']['ref'] }}.
+            {{ payload['holding_company']['name'] }} is authorised and regulated by the Financial Conduct Authority and is entered on the
+            Financial Services Register under reference number: {{ payload['holding_company']['fsa']['ref'] }} <br>
+            {{ payload['company']['name'] }} is registered in England and Wales Company number: {{ payload['company']['reg'] }}, registered office; {{ payload['company']['address'] }} and Licensed by the Information Commissioners Office (registration number: {{ payload['company']['ico_reg'] }})
+	  </p>
+
+	  <p><strong>We are not a lender and do not provide credit to consumers. If you make an
+              application through this website it will be shown to a selection of our lending partners for their
+              consideration.</strong></p>
+
+
+	  <p>{{ payload['holding_company']['name'] }} does not charge borrowers a fee for the use of the brokerage services, but it receives a
+            commission from lenders or other brokers where borrowers enter into a consumer credit agreement with
+            lenders
+            and brokers following an introduction through this website. As a broker we process the information you
+            provide us and pass this onto our trusted third party lenders and brokers to help you apply for a loan.
+            For
+            more information on how we handle your data see our <a href="/privacy.html">Privacy Policy</a>.</p>
+
+
+	  <p>* This will depend on the lender you are placed with.</p>
+
+	  <p>&#185; Subject to application being approved by the lender. Not all lenders are able to provide up to
+            £5000.</p>
+
+	  <p>&#178; Upon acceptance of the loan offer and entry into an agreement with the lender, the lender will
+            transfer the cash within 24 hours. <br>Clearance of the funds is dependent on whether your bank accepts
+            faster payments.</p>
+
+
+	  <p><img src="/images/secure-logos.png" class="secure-logos" alt="Secure Website"></p>
+	</div>
+      </div>
+    </div>
+    <!-- / container-fluid info -->
+
+
+    {% if request.path == '/index.html' %} 
+    <script src="/libs/jquery/dist/jquery.min.js"></script>
+    <script src="/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/libs/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
+    <script src="/libs/angular/angular.js"></script>
+    <script src="/libs/ngstorage/ngStorage.js"></script>
+    <script src="/libs/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+    <script src="/js/readFromStorage.js"></script>
+    <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/slider2.js"></script>
+    <script src="/js/sitewide.js"></script>
+    <script src="/js/quiddi.core.js"></script>
+    <script src="/libs/requirejs/require.js" data-main="/js/loader.js"></script>
+    <script src="/libs/cookieDirective/jquery.cookiesdirective.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+      $.cookiesDirective({
+      privacyPolicyUri: 'privacy.html',
+      duration: 5,
+      position: 'bottom',
+      explicitConsent: false,
+      message: "MultiMonthLoans.com has placed cookies on your computer to help make your experience better.",
+      fontFamily: 'helvetica', // font style for disclosure panel
+      fontColor: '#FFFFFF', // font color for disclosure panel
+      fontSize: '13px', // font size for disclosure panel
+      backgroundColor: '#2c415c', // background color of disclosure panel
+      backgroundOpacity: '0.9', // opacity of disclosure panel
+      linkColor: '#f77448' // link color in disclosure panel
+      });
+      $("input[type='submit'][name='impliedsubmit']").each(function () {
+      $(this).css("backgroundColor", "#f77448");
+      $(this).css("border", "none");
+      });
+      });
+    </script>
+
+
+    {% else %}
+    <script src="/libs/jquery/dist/jquery.min.js"></script>
+    <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/sitewide.js"></script>
+    <script src="/libs/requirejs/require.js" data-main="/js/loader.js"></script>
+
+    {% endif %}
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

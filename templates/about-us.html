@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="col-md-8">
+  <p>Here at {{ payload['company']['name'] }} we pride ourselves on putting the customer first. We have been in the business of offering the best loans to customers for over four years and have a team of professional staff that make sure you get what you need at the right time for all your needs. Whats more is that we are UK based (not overseas as a lot of loan companies are) and service our UK clients with UK staff.</p>
+
+  <p>We have leading edge technology that matches customers to lenders in seconds and our panel of lenders had been growing every year. We use the latest secure encryption technology to ensure your data is protected and are regulated by the ICO which ensure we work to the right standards in protecting all data.</p>
+
+  <p>We have processed over 2 million loan applications over the last few years and our high customers satisfaction ratings show we are amongst the best in the industry. We hold a credit license as an authorised credit broker and as a member of the CCTA we are governed by the rules that govern lenders that issue credit in ensuring customer fairness and due process.</p>
+
+  <p><strong>Try us and experience the difference!</strong></p>
+
+  <a href="apply.html" class="apply-btn short">Apply Now</a>
+  <!-- <p class="apr">Representative APR 91 <span class="dynamic-longterm-apr-value"></span>*</p> -->
+  <p class="apr">Representative APR {{ payload['website']['apr'] }}% *</p>
+
+</div>
+{% endblock %}

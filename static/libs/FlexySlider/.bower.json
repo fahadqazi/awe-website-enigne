@@ -1,0 +1,13 @@
+{
+  "name": "FlexySlider",
+  "version": "0.1.1",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "9a6d3bb1dcf0cd6f58e537580b3787d883325e38"
+  },
+  "_source": "git@quiddi-devel:FlexySlider",
+  "_target": "~0.1.1",
+  "_originalSource": "git@quiddi-devel:FlexySlider"
+}

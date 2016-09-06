@@ -1,0 +1,164 @@
+.player {
+  width: 100%;
+  max-width: 400px;
+  height: 36px;
+  position: relative;
+  margin: 0 auto 28px auto;
+  background-color: lightgray;
+  border-radius: 20px;
+}
+.volume {
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+  height: 36px;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .volume {
+    max-width: 240px;
+  }
+}
+.slider_txt {
+  font-size: 18px;
+  margin-top: 6px;
+  text-align: left;
+  margin-left: -21px;
+  margin-right: -15px;
+}
+.text-bottom {
+  margin-left: 8px;
+  margin-right: 14px;
+}
+.volume .ui-slider-range-min {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  max-width: 400px;
+  height: 36px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #86bc3d;
+}
+.volume span {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url(/images/amount-btn.png) no-repeat;
+  background-size: contain;
+  margin-top: -18px;
+  margin-left: -40px;
+}
+.volume span:focus {
+  outline: none;
+}
+.volume span:hover {
+  transform: scale(0.9);
+}
+.volume2 span {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url(/images/duration-btn.png) no-repeat;
+  background-size: contain;
+  margin-top: -18px;
+  margin-left: -40px;
+}
+.volume2 span:focus {
+  outline: none;
+}
+.volume2 span:hover {
+  transform: scale(0.9);
+}
+.volume2 .ui-slider-range-min {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  max-width: 400px;
+  height: 36px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #f1602b;
+}
+#slider-money-bowl {
+  position: relative;
+  background: url(/images/money-jar.png) no-repeat;
+  width: 280px;
+  height: 400px;
+  padding: 150px 0px 0px 90px;
+}
+@media (max-width: 768px) {
+  #slider-money-bowl {
+    padding: 150px 0px 0px 73px;
+  }
+}
+#slider-money-bowl #amount {
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 34px;
+  background-color: transparent;
+  position: absolute;
+  width: 200px;
+}
+@media (max-width: 768px) {
+  #slider-money-bowl {
+    margin-left: 5%;
+  }
+}
+.sideImage {
+  position: relative;
+  width: 30%;
+  height: 383px;
+}
+.sideImage img {
+  position: absolute;
+  bottom: -10px;
+}
+#slider-capsule {
+  position: relative;
+  background: url(/images/time-capsule.png) no-repeat;
+  width: 273px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+}
+#slider-capsule #duration {
+  border: 0;
+  color: #505050;
+  font-weight: 700;
+  font-size: 77px;
+  background-color: transparent;
+  position: absolute;
+  width: 250px;
+  top: -76px;
+  margin-left: -123px;
+  text-align: center;
+}
+.slider-apply .apply-btn.short {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  width: 70%;
+}
+.slider-apply .apply-btn {
+  background-color: #e2178b;
+  border: 2px solid #bc1e8b;
+  font-size: 38px;
+  line-height: 40px;
+  color: #ffffff;
+  height: 55px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 0 0;
+  margin: 25px 0 0 0;
+  text-shadow: #000 0px 0px 6px;
+}
