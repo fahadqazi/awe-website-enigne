@@ -6,7 +6,7 @@ flake8==2.6.2
 GnuPGInterface==0.3.2
 gyp==0.1
 html5lib==0.999
-httpie==0.8.0
+httpie==1.0.3
 httplib2==0.8
 importmagic==0.1.7
 jedi==0.9.0
