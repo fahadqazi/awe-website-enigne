@@ -5,7 +5,7 @@ configobj==4.7.2
 flake8==2.6.2
 GnuPGInterface==0.3.2
 gyp==0.1
-html5lib==0.999
+html5lib==0.99999999
 httpie==0.8.0
 httplib2==0.8
 importmagic==0.1.7
